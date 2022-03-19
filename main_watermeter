@@ -1,0 +1,16 @@
+import dash
+import plotly.express as px
+import pandas as pd
+from dash.dependencies import Input, Output, State
+from dash import dcc
+from dash import html
+
+# Data Exploration with Pandas (python)
+
+sheet_id = '1NqL2E1ufxrP7TbgrnPkIEMK5z1ZPTVjVsRfZbXnCRsM/edit?usp=sharing'
+df = pd.read_csv(f"https://docs.google.com/spreadsheets/d/{sheet_id}/export?format=csv")
+print(df)
+
+
+
+
